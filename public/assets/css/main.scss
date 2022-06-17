@@ -1,7 +1,11 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
-$theme-bg :salmon;
 
-body{
-    background-color: $theme-bg;
+*{
+    box-sizing: border-box;
+}
+
+login-form{
+    margin-top: 20%;
+    padding-top: 20px;
 }

@@ -11957,7 +11957,13 @@ fieldset:disabled .btn {
   }
 }
 
-body {
-  background-color: salmon;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+login-form {
+  margin-top: 20%;
+  padding-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */

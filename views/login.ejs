@@ -8,36 +8,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href='/assets/css/main.css'> -->
+    <link rel="stylesheet" href='/assets/css/main.css'>
     <!-- <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.css"> -->
   
 </head>
-<body style="background-color: #00c8eb;">
-<div class="container-fluid" style="height: 650px; box-sizing: border-box;">
+<body>
+<div class="container-fluid" style="box-sizing: border-box;">
     <div class="row">
-        <div class="col-md-8" style="background-color: aquamarine; height: 650px;">
-           <img src="/public/images/png-login.png" alt="tokodigital">
+        <div class="col-md-8" style="background-color: #00c8eb; height: 100vh; padding-top: 8%;">
+           <img src="/images/png-login.png"width="800px" alt="tokodigital">
         </div>
-        <div class="col-md-4" style="background-color: white;">
-            <div class="row justify-content-center">
-                <div class="col-md-10">
-                    <div class="mb-4">
-                    <h2 class= "fa-align-center" aria-hidden="true">Selamat Datang Admin</h2>
-                    <h5 class= "fa-align-center">Silahkan login untuk melanjutkan</h5>
-                    </div>
-                </div>
-                <div class="form">
-                    <h6>Username :</h6>
-                    <input type="text" name="Username" id="username">
-                    <h6>Password :</h6>
-                    <input type="password" name="Password" id="password">
+        <div class="col-md-4" style="background-color: #00c8eb;height: 100vh;">
+            <div class="card" style="margin-top: 20%; border-radius: 14px; height: 500px;">
+                <div class="card-header">
                     <br>
-                    <input type="checkbox">
-                    <label for="remember"><h6>remember me</h6></label>
-                    <span><a href=""><h6>forgot password</h6></a></span>
-                    <button>Login</button>
+                    <h2 class="card-tittle text-center">Selamat Datang Admin</h2>
+                    <h5 class="text-center">Silahkan login untuk melanjutkan</h5>
+                </div>
+                <div class="card-body">
+                   
+                    <h6>Username :</h6>
+                    <input type="text" class="form-control" placeholder="Silahkan Masukan Username" aria-label="Username">
+                    <br>
+                    <h6>Password :</h6>
+                    <input type="password" class="form-control" placeholder="Silahkan Masukan Password" aria-label="Password">
+                   <br>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value=""> Remember Me</label>
+                    </div>
+                    <br>
+                        
+                    <div class="d-grid gap-2 col-8 mx-auto">
+                        <button class="btn btn-primary" type="button">Login</button>
+                      </div>
                 </div>
             </div>
         </div>
