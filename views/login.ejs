@@ -27,23 +27,23 @@
                     <h2 class="card-tittle text-center">Selamat Datang Admin</h2>
                     <h5 class="text-center">Silahkan login untuk melanjutkan</h5>
                 </div>
-                <div class="card-body">
-                   
-                    <h6>Username :</h6>
-                    <input type="text" class="form-control" placeholder="Silahkan Masukan Username" aria-label="Username">
-                    <br>
-                    <h6>Password :</h6>
-                    <input type="password" class="form-control" placeholder="Silahkan Masukan Password" aria-label="Password">
-                   <br>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value=""> Remember Me</label>
+                <form action="/routes/login.js" method="post">  
+                    <div class="card-body">
+                            <h6>Username :</h6>
+                            <input type="text" class="form-control" placeholder="Silahkan Masukan Username" aria-label="Username">
+                            <br>
+                            <h6>Password :</h6>
+                            <input type="password" class="form-control" placeholder="Silahkan Masukan Password" aria-label="Password">
+                            <br>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value=""> Remember Me</label>
+                            </div>
+                            <br>    
+                            <div class="d-grid gap-2 col-8 mx-auto">
+                                <button class="btn btn-primary" type="button">Login</button>
+                            </div>
                     </div>
-                    <br>
-                        
-                    <div class="d-grid gap-2 col-8 mx-auto">
-                        <button class="btn btn-primary" type="button">Login</button>
-                      </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
