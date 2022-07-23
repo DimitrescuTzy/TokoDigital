@@ -4,7 +4,13 @@ const session = require("express-session")
 const {v4:uuidv4} = require("uuid")
 const dbconn = require("./config/db")
 
-const routerLogin = require("./routes/login")
+const routesLogin = require("./routes/login")
+const routesDashboard = require("./routes/dashboard")
+const routesBarang = require("./routes/barang")
+const routesMember = require("./routes/member")
+const routesKaryawan = require("./routes/karyawan")
+const routesPenjualan = require("./routes/penjualan")
+const routesPembelian = require("./routes/pembelian")
 
 
 var app = express() //init App sebagai web app Framework Express 
@@ -28,7 +34,13 @@ app.use(bodyParser.urlencoded({extended:false}))
 //app.use(methodOverride("_method"))
 
 //Routing
-app.use("/login" ,routerLogin)
+app.use("/login" ,routesLogin)
+app.use("/dashboard" ,routesDashboard)
+app.use("/barang" ,routesBarang)
+app.use("/member" ,routesMember)
+app.use("/karyawan" ,routesKaryawan)
+app.use("/penjualan" ,routesPenjualan)
+app.use("/pembelian" ,routesPembelian)
 
 app.use((req,res)=>{
     res.status(404);
