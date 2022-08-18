@@ -1,1 +1,46 @@
-Hello Karyawan
+<!DOCTYPE html>
+<h1>Tabel Karyawan</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nama Karyawan</th>
+            <th>Jenis Kelamin</th>
+            <th>Tanggal Lahir</th>
+            <th>Alamat</th>
+            <th>No Handphone</th>
+            <th>Jabatan</th>
+            <th>Status Karyawan</th>
+            <th>Username</th>
+            <th>Password</th>
+        </tr>
+    </thead>    
+
+    <tbody>
+        <% if(rows.length != 0){ %>
+          
+             <% for(var i = 0;i < rows.length; i++){ %> 
+            <tr>
+                <td scope="row" class ="text-center"><%=(i+1)%></td>
+                <td><%=rows[i][1]%></td>
+                <td><%=rows[i][2]%></td>
+                <td><%=rows[i][3]%></td>
+                <td><%=rows[i][4]%></td>
+                <td><%=rows[i][5]%></td>
+                <td><%=rows[i][6]%></td>
+                <td><%=rows[i][7]%></td>
+                <td><%=rows[i][8]%></td>
+                <td><%=rows[i][9]%></td>
+            </tr>
+            <% } %>        
+        <%} else { %>
+            <tr>
+                <td colspan="8"> <div class="alert alert-danger" role ="alert">
+                    Data tidak ditemukan !
+                </div></td>
+            </tr>    
+        <% } %>
+    </tbody>
+</table>
+</html>

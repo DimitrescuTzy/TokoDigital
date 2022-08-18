@@ -6,12 +6,12 @@ let conn = oradb.getConnection(
         password:"tokodigital",
         connectString:"localhost/xe"
         //"(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = Instinct)(PORT = 1521))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = XE)))"
-    }, function(err,conn){
+    }, function(err,sucConn){
         if (err){   
             console.error(err.message); return;
         }else{
-            console.log('Berhasil terhubung ke Database dgn service XE');
-        }
+            console.log('Berhasil terhubung ke Database dgn service XE ' + sucConn);
+        }   
     }
 )
 module.exports=conn;
